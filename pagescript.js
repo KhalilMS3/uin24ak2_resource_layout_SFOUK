@@ -1,5 +1,4 @@
 function getContent(category){
-    // console.log("dette funker")
     let contentHTML = ""
     const selectedResources = resources.filter(resource => resource.category === category)
 
@@ -8,9 +7,7 @@ function getContent(category){
             <h1>${resource.category}</h1>
             <p>${resource.text}</p>
                 <ul id="links">
-                <li><a href="${resource.sources[0].url}">${resource.sources[0].title}</a></li>
-                <li><a href="${resource.sources[1].url}">${resource.sources[1].title}</a></li>
-                <li><a href="${resource.sources[2].url}">${resource.sources[2].title}</a></li>
+                ${resource.sources.map(source => `<li><a href="${source.url}">${source.title}<a/></li>`).join('')}
             </ul>
             </section>`
         
