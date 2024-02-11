@@ -21,7 +21,6 @@ body{
 
 }
 
-
 .container{
     width: 100%;
     max-width: 1400px;
@@ -62,7 +61,7 @@ nav ul li button:focus{
     background-color: var(--white);
 }
 #main{
-    margin: 0 11.5px;
+    margin: 0 26.5px;
 }
 #main section{
     background-color: var(--white);
